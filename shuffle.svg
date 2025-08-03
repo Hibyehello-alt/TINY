@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='ascii'?>
+<svg class="shufflebtn" xmlns="http://www.w3.org/2000/svg" version="1.1" width="128" height="128" viewBox="0 0 128 128">
+    <g id="ViewLayer_LineSet" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:groupmode="lineset" inkscape:label="ViewLayer_LineSet">
+        <g xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:groupmode="layer" id="strokes" inkscape:label="strokes">
+            <g id="playlist_shuffle">
+              <g class="toTop">
+                <path stroke-width="3.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 7.050, 88.726 12.259, 88.392 17.388, 88.064 22.517, 87.744 27.541, 87.082 32.428, 85.974 33.757, 90.989 34.236, 92.798 34.235, 92.798 28.790, 94.030 23.342, 94.755 17.894, 95.106 12.446, 95.449 7.076, 95.785 7.050, 88.726 " />
+                <path stroke-width="3.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 32.428, 85.974 37.263, 84.782 37.263, 84.782 39.655, 91.423 39.655, 91.423 34.237, 92.798 34.237, 92.798 33.757, 90.989 32.428, 85.974 " />
+                <path stroke-width="3.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 37.263, 84.782 41.624, 82.707 41.624, 82.707 44.868, 88.977 44.867, 88.977 39.655, 91.423 39.655, 91.423 37.264, 84.783 37.263, 84.783 " />
+                <path stroke-width="3.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 41.624, 82.707 41.624, 82.707 45.766, 80.358 45.766, 80.358 49.858, 86.111 49.858, 86.111 44.869, 88.976 44.869, 88.976 41.624, 82.707 " />
+                <path stroke-width="3.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 45.766, 80.358 49.389, 77.327 49.390, 77.327 54.351, 82.347 54.351, 82.347 54.351, 82.347 54.351, 82.347 49.858, 86.111 49.858, 86.111 45.767, 80.360 45.766, 80.359 " />
+                <path stroke-width="3.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 109.410, 46.308 104.750, 46.599 99.626, 46.911 94.501, 47.216 89.627, 48.337 84.751, 49.443 80.284, 51.302 75.937, 53.378 72.379, 56.486 69.182, 60.017 66.373, 64.040 64.813, 66.815 63.849, 68.529 61.157, 73.252 60.806, 73.775 58.027, 77.920 54.351, 82.347 54.351, 82.347 54.350, 82.346 54.349, 82.345 49.388, 77.326 49.388, 77.326 52.428, 73.620 55.176, 69.502 56.705, 66.812 57.727, 65.015 60.410, 60.261 60.787, 59.723 63.679, 55.596 67.576, 51.313 72.057, 47.481 77.263, 44.921 82.556, 42.733 88.022, 41.462 93.495, 40.228 98.958, 39.884 104.422, 39.547 109.410, 39.247 " />
+                <path stroke-width="0.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 109.139 29.081, 125 42.1155 ,109.139 56.150" />
+              </g>
+              <g class="toBottom">
+                <path stroke-width="3.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 12.432, 37.639 12.245, 44.695 12.245, 44.695 7.048, 44.362 7.074, 37.302 12.432, 37.639 " />
+                <path stroke-width="3.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 32.291, 47.094 27.447, 45.996 22.455, 45.339 17.350, 45.022 12.245, 44.694 12.245, 44.693 12.432, 37.639 17.856, 37.980 23.279, 38.328 28.695, 39.048 34.099, 40.270 " />
+                <path stroke-width="3.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 34.099, 40.270 32.291, 47.094 " />
+                <path stroke-width="3.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 37.082, 48.273 32.291, 47.094 32.291, 47.094 34.099, 40.270 34.099, 40.270 39.473, 41.631 39.473, 41.631 37.082, 48.273 " />
+                <path stroke-width="3.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 41.379, 50.318 37.082, 48.272 37.083, 48.271 39.473, 41.631 39.473, 41.631 44.622, 44.048 44.622, 44.048 41.380, 50.317 41.380, 50.318 " />
+                <path stroke-width="3.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 45.457, 52.627 41.379, 50.318 41.379, 50.318 44.623, 44.049 44.624, 44.049 49.548, 46.874 49.548, 46.874 45.457, 52.627 45.457, 52.627 " />
+                <path stroke-width="3.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 109.410, 93.815 104.415, 93.515 98.925, 93.177 93.436, 92.830 87.918, 91.591 82.406, 90.308 77.050, 88.100 71.778, 85.505 67.224, 81.623 63.269, 77.285 60.806, 73.775 59.963, 72.572 57.266, 67.799 56.705, 66.812 54.725, 63.330 52.005, 59.253 49.014, 55.603 45.457, 52.627 45.457, 52.627 49.548, 46.874 49.548, 46.874 53.976, 50.581 57.604, 54.953 60.705, 59.578 60.787, 59.723 63.388, 64.283 64.813, 66.815 65.924, 68.791 68.770, 72.861 72.023, 76.446 75.654, 79.605 80.067, 81.717 84.598, 83.597 89.520, 84.716 94.440, 85.842 99.591, 86.149 104.741, 86.464 109.410, 86.754 " />
+                <path stroke-width="0.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 109.139 76.317, 125 89.8515 , 109.139 103.386" />
+              </g>
+            </g>
+            <g id="playlist_noShuffle">
+              <g class="top">
+              <path stroke-width="3.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 7.594 39.081, 109.139, 39.081, 109.139 46.150, 7.594 46.150, 7.594 37.6" />
+              <path stroke-width="0.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 109.139 29.081, 125 42.1155 ,109.139 56.150" />
+              </g>
+              <g class="bottom">
+                <path stroke-width="3.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 7.594 86.317, 109.139, 86.317, 109.139 93.386, 7.594 93.386, 7.594 84.8" />
+                <path stroke-width="0.0" stroke-linecap="butt" stroke-opacity="1.0" stroke="rgb(0, 0, 0)" stroke-linejoin="miter" d=" M 109.139 76.317, 125 89.8515 , 109.139 103.386" />
+              </g>
+            </g>
+        </g>
+    </g>
+    <rect class="Btn" x="0" y="0" onclick="toggleShuffle()"/>
+</svg>
