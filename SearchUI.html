@@ -1,0 +1,57 @@
+<div class="tabcontent" id="searchPage">
+  <div id="Search">
+      <span id="search-w-history">
+        <div id="searchBarBtn">
+        <input type="text" id="searchQuery" class="searchBar" placeholder="Search with TINY">
+        <button class="btn searchBtn" onclick="doSearch()">Search</button>
+        </div>
+        <span style="height: 0; width: 0; margin-bottom: 5px;">
+          <span class="prev-search" id="prev-search"> </span>
+        </span>
+      </span>
+    <span id="searchMisc">
+      <button class="btn" onclick="toggleSearchSettings()">Filters</button>
+      <button class="btn" onclick="getURLtoEmbed()">Watch by URL</button>
+    </span>
+  </div>
+  <label for="sortBy">
+      Sort By
+      <select class="dropdown" name="sortBy" id="sortBy" style="border: none; border-radius: 20px; background: #EEE">
+        <option value="relevance" selected="selected">Relevance</option>
+        <option value="date">Date</option>
+        <option value="rating">Rating</option>
+        <option value="viewCount">Views</option>
+        <option value="title">Title</option>
+        <option value="videoCount">Channel Video count</option>
+      </select>
+    </label>
+  <div id="container">
+    <div id="searchResults" class="results"></div>
+  </div>
+</div>
+
+<div class="overlay" id="searchSettingOverlay">
+  <div class="dialog" id="search-dialog">
+    <input type="image" class='close-btn' src="https://raw.githubusercontent.com/Hibyehello-alt/Tiny-icon-repo/main/close-btn.svg" onclick="toggleSearchSettings()">
+    <h3>Search Settings</h3>
+    <label for="searchType">Type</label>
+    <div class="searchType" style="display:flex; flex-direction:row">
+      <input type="checkbox" class="checkbox" id="video-check" name="Video" checked /> <label for=S_VIDEO>Videos</label>
+      <input type="checkbox" class="checkbox" id="playlist-check" name="Playlists" checked /> <label for=S_PLAYLIST>Playlists</label>
+      <input type="checkbox" class="checkbox" id="channel-check" name="Channels" /> <label for=S_CHANNEL>Channels</label>
+    </div>
+    <label for="safeSearch">Enable SafeSearch</label>
+    <select class="safeSearch" name="safeSearch" id="safeSearchSettings">
+      <option value="none">Off</option>
+      <option value="moderate">Partial</option>
+      <option value="strict" selected="selected">On (recommended)</option>
+    </select>
+  </div>
+</div>
+
+<div class="overlay" id="urlOverlay">
+<div class="dialog" id="getURL">
+  <input type="text" id="urlQuery" placeholder="Enter Youtube Link">
+  <button class="btn" onclick="sendURLtoEmbed()">Watch</button>
+</div>
+</div>
