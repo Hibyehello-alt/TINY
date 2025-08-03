@@ -1,0 +1,172 @@
+/* Style the tab */
+#mainHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border: none;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab .tablinks {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab .tablinks:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab .tablinks.active {
+  background-color: #ccc;
+}
+
+.settingsBtn {
+width: 24px;
+height: 24px;
+margin-right: 5px;
+background: url(https://drive.google.com/uc?export=view&id=1Kwo-8Sa97mrHMRrCFXEPBteQLqUimwsz);
+/* url(https://upload.wikimedia.org/wikipedia/commons/d/dc/Settings-icon-symbol-vector.png); */
+}
+
+.settingsBtn:hover {
+  animation:spin 4s linear infinite;
+}
+
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
+.overlay {
+  position: absolute;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  left: 0;
+  top: 0;
+  background-color: rgba(68,68,68,0.5);
+  z-index: 1;
+}
+
+.dialog {
+position: absolute;
+display: flex;
+flex-direction: column;
+width: fit-content;
+height: fit-content;
+justify-content: center;
+align-items: flex-start;
+padding: 10px;
+padding-top: 25px;
+border: 1px solid #ddd;
+border-radius: 20px;
+margin: auto;
+background-color: #f1f1f1;
+z-index: 1;
+}
+
+.close-btn {
+position: absolute;
+left: 3px;
+top: 3px;
+font-size: 9px;
+font-weight: bold;
+width: 20px;
+height: 20px;
+border: none;
+border-radius: 50%;
+background: #444;
+color: white;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.close-btn:hover {
+  filter: brightness(50%)
+}
+
+.video-close {
+  left: -10px;
+  top: -20px;
+}
+
+#video {
+  display: none;
+  border: none;
+  position: relative;
+  right: 10px;
+  height: fit-content;
+  width: fit-content;
+}
+#player {
+  position: relative;
+  width: 370px;
+  height: 208px;
+  border: none;
+}
+#video-player {
+  width: 370px;
+  height: 209px;
+  border: none;
+}
+
+.pause {
+  display: none;
+}
+
+.fullscreenBtn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: fit-content;
+  width: fix-content;
+}
+
+#fullscreenSVG {
+  height: 20px;
+  width: 20px;
+}
+
+.checkbox {
+  vertical-align: middle;
+}
+.checkbox:hover {
+  cursor: pointer;
+}
+
+.Btn {
+  stroke:#fff;
+  fill:#fff;
+  fill-opacity:0;
+  stroke-opacity:0;
+  height: 120%;
+  width: 120%;
+  x: -15;
+  y: -15;
+}
+.Btn:hover {
+  cursor: pointer;
+}
