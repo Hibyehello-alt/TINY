@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+
+
+    <!-- Styles -->
+    <?!= include('MainStyle'); ?>
+    <?!= include('PlaylistStyle'); ?>
+    <?!= include('SearchStyle'); ?>
+    <?!= include('HistoryStyle'); ?>
+    
+    <!-- Scripts -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <?!= include('CommonScripts'); ?>
+    <?!= include('MainScripts'); ?>
+    <?!= include('PlaylistScripts'); ?>
+    <?!= include('SearchScripts'); ?>
+    <?!= include('HistoryScripts'); ?>
+  </head>
+  <body onload="onLoad()" style="background-color: #FFF" allowfullscreen>
+    <!-- Tab links -->
+    <div id="mainHeader">
+      <div class="tab">
+        <button class="tablinks" onclick="openPage(event, 'searchPage')" id="defaultOpen">Search</button>
+        <button class="tablinks" onclick="openPage(event, 'historyPage')">History</button>
+        <button class="tablinks" onclick="openPage(event, 'aboutPage')">About</button>
+      </div>
+      <input type="image" class='settingsBtn' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Gear_icon_svg.svg" onclick="toggleMainSettings()">
+    </div>
+
+    <div id="video">
+        <input type="image" class='close-btn video-close' src="https://raw.githubusercontent.com/Hibyehello-alt/Tiny-icon-repo/main/close-btn.svg" onclick="hideVideo()">
+          <iframe id="video-player" allow="fullscreen; autoplay; gyroscope" allowfullscreen></iframe>
+    </div>
+
+    <div class="overlay" id="mainSettingOverlay">
+      <div class="dialog" id="mainSettingDialog">
+        <h3>Global Settings</h3>
+        <input type="image" class='close-btn' src="https://raw.githubusercontent.com/Hibyehello-alt/Tiny-icon-repo/main/close-btn.svg" onclick="toggleMainSettings()">
+        <label for="global_autoplay">
+          <input type="checkbox" class="checkbox" id="global_autoplay" checked/>
+          Enable Playlist Autoplay
+        </label>
+        <label for="global_shuffle">
+          <input type="checkbox" class="checkbox" id="global_shuffle" checked/>
+          Enable Playlist Shuffle
+        </label>
+      </div>
+    </div>
+
+    <!-- SubPages -->
+    <?!= include('SearchUI'); ?>
+    <?!= include('HistoryUI'); ?>
+    <?!= include('AboutUI'); ?>
+  </body>
+</html>
