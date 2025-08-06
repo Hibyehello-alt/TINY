@@ -3,20 +3,23 @@
   <head>
     <base target="_top">
 
+    <title>TINY Search</title>
 
     <!-- Styles -->
-    <?!= include('MainStyle'); ?>
-    <?!= include('PlaylistStyle'); ?>
-    <?!= include('SearchStyle'); ?>
-    <?!= include('HistoryStyle'); ?>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="PlaylistStyle.css">
+    <link rel="stylesheet" href="SearchStyle.css">
+    <link rel="stylesheet" href="HistoryStyle.css">
     
     <!-- Scripts -->
     <script src="https://www.youtube.com/iframe_api"></script>
-    <?!= include('CommonScripts'); ?>
-    <?!= include('MainScripts'); ?>
-    <?!= include('PlaylistScripts'); ?>
-    <?!= include('SearchScripts'); ?>
-    <?!= include('HistoryScripts'); ?>
+    <script src="backend.js"></script>
+    <script src="CommonScripts.js"></script>
+    <script src="index.js"></script>
+    <script src="PlaylistScripts.js"></script>
+    <script src="SearchScripts.js"></script>
+    <script src="HistoryScripts.js"></script>
+
   </head>
   <body onload="onLoad()" style="background-color: #FFF" allowfullscreen>
     <!-- Tab links -->
@@ -48,10 +51,5 @@
         </label>
       </div>
     </div>
-
-    <!-- SubPages -->
-    <?!= include('SearchUI'); ?>
-    <?!= include('HistoryUI'); ?>
-    <?!= include('AboutUI'); ?>
   </body>
 </html>

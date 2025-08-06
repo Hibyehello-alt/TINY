@@ -1,3 +1,5 @@
+const doHistory = false;
+
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
   ui.createMenu('TINY Search')
@@ -5,9 +7,18 @@ function onOpen() {
     .addToUi();
 }
 
-function include(filename) {
-  var html = HtmlService.createHtmlOutputFromFile(filename).getContent();
-  return html;
+async function include(filename) {
+    return fetch(filename) // Replace with the actual URL of the JS file
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        html = response.text();
+        return html;
+    })
+    .catch(error => {
+        console.error('Failed to fetch script:', error);
+    });
 }
 
 function showSearchDialog() {
@@ -91,31 +102,29 @@ function getParentPlaylist(id) {
   });
 }
 
-function getUser() {
-  return Session.getActiveUser().getEmail();
-}
-
 function saveHistory(result) {
-    var userProperties = PropertiesService.getUserProperties();
-    var history = userProperties.getProperty('history');
-    if(!history) {
-      userProperties.setProperty('history', '[]');
-    } else {
-      var temp;
-      try {
-        temp = JSON.parse(history);
-      } catch (e) {
-        console.log("Parse Error, so flushing history, likely history from old implementation");
-        temp = [];
-      }
-
-      temp.push(result);
-
-      userProperties.setProperty('history', JSON.stringify(temp));
+  if(!doHistory) return;
+  var userProperties = PropertiesService.getUserProperties();
+  var history = userProperties.getProperty('history');
+  if(!history) {
+    userProperties.setProperty('history', '[]');
+  } else {
+    var temp;
+    try {
+      temp = JSON.parse(history);
+    } catch (e) {
+      console.log("Parse Error, so flushing history, likely history from old implementation");
+      temp = [];
     }
+
+    temp.push(result);
+
+    userProperties.setProperty('history', JSON.stringify(temp));
+  }
 }
 
 function getHistory() {
+  if(!doHistory) return;
   var userProperties = PropertiesService.getUserProperties();
   try {
   return JSON.parse(userProperties.getProperty('history'));
@@ -126,12 +135,14 @@ function getHistory() {
 }
 
 function clearHistory() {
+  if(!doHistory) return;
   var userProperties = PropertiesService.getUserProperties();
   userProperties.setProperty('history', "[]");
   return [];
 }
 
 function saveSearchHistory(query) {
+  if(!doHistory) return;
   var userProperties = PropertiesService.getUserProperties();
   var history = userProperties.getProperty('search_history');
 
@@ -152,20 +163,15 @@ function saveSearchHistory(query) {
 }
 
 function getSearchHistory() {
+  if(!doHistory) return;
   var userProperties = PropertiesService.getUserProperties();
   return JSON.parse(userProperties.getProperty('search_history'));
 }
 
 function clearSearchHistory() {
+  if(!doHistory) return;
   var userProperties = PropertiesService.getUserProperties();
   userProperties.setProperty('search_history', "[]");
-}
-
-function doGet(e) {
-  return HtmlService.createTemplateFromFile("Main")
-  .evaluate()
-  .setTitle("My Web App")
-  .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL); 
 }
 
 function testSearch() {

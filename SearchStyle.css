@@ -7,6 +7,14 @@ body {
 .tabWidget {
   overflow: hidden;
 }
+
+.dropdown {
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+.dropdown :hover {
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
 #Search {
   display: flex;
   flex-direction: column;

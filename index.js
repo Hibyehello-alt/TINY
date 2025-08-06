@@ -1,7 +1,7 @@
 var player;
 var fullscreen_svg = {html: ''};
 
-function onLoad() {
+async function onLoad() {
   let mainSettingsOverlay = document.getElementById("mainSettingOverlay");
   mainSettingsOverlay.addEventListener("click", (event) => {
     if(event.target.closest("#mainSettingDialog")) return;
@@ -15,14 +15,15 @@ function onLoad() {
     }
   });
 
-  getHtml(null, fullscreen_svg, "fullscreen_svg");
-  waitForHTML("fullscreen_svg", () => {
-    var fullscreenBtn = document.createElement("div");
-    fullscreenBtn.innerHTML = fullscreen_svg.html;
-    fullscreenBtn.className = "fullscreenBtn"
-    document.body.appendChild(fullscreenBtn);
-    document.getElementById("fs_exit").style = "display: none;"
-  });
+  document.body.innerHTML += await include('SearchUI.html');
+  document.body.innerHTML += await include('HistoryUI.html');
+  document.body.innerHTML += await include('AboutUI.html');
+
+  var fullscreenBtn = document.createElement("div");
+  fullscreenBtn.innerHTML = await include("Fullscreen.svg")
+  fullscreenBtn.className = "fullscreenBtn"
+  document.body.appendChild(fullscreenBtn);
+  document.getElementById("fs_exit").style = "display: none;"
 
   document.getElementById("defaultOpen").click();
   showHistory();
