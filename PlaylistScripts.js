@@ -1,5 +1,5 @@
 function playlistOnLoad() {
-  console.log("Playlist successfully loaded");
+  console.log("Playlist Module successfully loaded");
 }
 
 var autoplay_svg = {html: ''};

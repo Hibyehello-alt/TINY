@@ -11,7 +11,7 @@ searchURLOverlay.addEventListener("click", (event) => {
   if(event.target.closest("#getURL")) return;
   event.target.style.display = "none";
 });
-  console.log("Successfully Loaded Search");
+  console.log("Search Module Successfully Loaded");
 
 let searchBar = document.getElementById("searchQuery");
 searchBar.addEventListener("focus", (event) => {

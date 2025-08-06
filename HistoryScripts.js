@@ -1,5 +1,8 @@
 function historyOnLoad() {
-  console.log("History Successfully Loaded");
+  if(doHistory)
+    console.log("History Module Successfully Loaded");
+  else
+    console.log("History Module Disabled");
 }
 
 function showHistory() {
